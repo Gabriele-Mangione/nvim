@@ -11,10 +11,13 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
 	["<C-l>"] = cmp.mapping.select_prev_item(cmp_select),
 	["<C-h>"] = cmp.mapping.select_next_item(cmp_select),
-	["<C-ö>"] = cmp.mapping.confirm({select = true}),
+	["<Tab>"] = cmp.mapping.confirm({select = true}),
 	["<C-Space>"] = cmp.mapping.complete(),
 })
 
+lsp.setup_nvim_cmp({
+    mapping = cmp_mappings
+})
 lspconfig.arduino_language_server.setup({
 	cmd = {
 		"arduino-language-server",
