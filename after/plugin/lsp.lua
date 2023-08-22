@@ -3,14 +3,16 @@ local lspconfig = require('lspconfig')
 lsp.preset('recommended')
 lsp.ensure_installed({
 	'clangd',
+    'rust_analyzer',
 	'arduino_language_server',
+    'lua_ls',
 })
 
 local cmp = require("cmp")
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
-	["<C-l>"] = cmp.mapping.select_prev_item(cmp_select),
-	["<C-h>"] = cmp.mapping.select_next_item(cmp_select),
+	["<C-k>"] = cmp.mapping.select_prev_item(cmp_select),
+	["<C-j>"] = cmp.mapping.select_next_item(cmp_select),
 	["<Tab>"] = cmp.mapping.confirm({select = true}),
 	["<C-Space>"] = cmp.mapping.complete(),
 })
@@ -18,6 +20,8 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 lsp.setup_nvim_cmp({
     mapping = cmp_mappings
 })
+
+lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 lspconfig.arduino_language_server.setup({
 	cmd = {
 		"arduino-language-server",
@@ -27,6 +31,5 @@ lspconfig.arduino_language_server.setup({
 		"arduino:avr:uno",
 	}
 })
-
 
 lsp.setup()
