@@ -25,10 +25,10 @@ lspconfig.lua_ls.setup(lsp.nvim_lua_ls())
 lspconfig.arduino_language_server.setup({
 	cmd = {
 		"arduino-language-server",
-		"-cli-config",
-		"C:/Users/i00204438/AppData/Local/Arduino15/arduino-cli.yaml",
-		"-fqbn",
-		"arduino:avr:uno",
+        "-clangd", "C:/Users/i00204438/AppData/Local/Programs/clangd_16.0.2/bin/clangd.exe",
+        "-cli", "C:/Users/i00204438/AppData/Local/Programs/arduino-cli_0.33.1_Windows_32bit/arduino-cli.exe",
+		"-cli-config", "C:/Users/i00204438/AppData/Local/Arduino15/arduino-cli.yaml",
+		"-fqbn", "esp32:esp32:esp32s3",
 	}
 })
 
