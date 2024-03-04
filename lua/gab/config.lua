@@ -13,4 +13,3 @@ vim.opt.smartindent = true
 vim.opt.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
 vim.opt.undofile = true
 
-vim.colorcolumn = "70"

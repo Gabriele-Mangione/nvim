@@ -5,7 +5,6 @@
   "deadcolumn.nvim": { "branch": "master", "commit": "af13928aa281f36273e8f220b19e78d497c7fb87" },
   "gitsigns.nvim": { "branch": "main", "commit": "2c2463dbd82eddd7dbab881c3a62cfbfbe3c67ae" },
   "lazy.nvim": { "branch": "main", "commit": "dac844ed617dda4f9ec85eb88e9629ad2add5e05" },
-  "lsp-zero.nvim": { "branch": "v2.x", "commit": "5e440523701b4512298eef61ae96757bbefaac49" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "e86a4c84ff35240639643ffed56ee1c4d55f538e" },
   "mason.nvim": { "branch": "main", "commit": "b5bb138312dbd3f7729197ca659cbe5221d36a03" },
   "neo-tree.nvim": { "branch": "v3.x", "commit": "cac2e1bfa1ecd5bd0ce7ae29e12efb3ba5a7347d" },
@@ -19,5 +18,6 @@
   "plenary.nvim": { "branch": "master", "commit": "267282a9ce242bbb0c5dc31445b6d353bed978bb" },
   "telescope.nvim": { "branch": "master", "commit": "776b509f80dd49d8205b9b0d94485568236d1192" },
   "undotree": { "branch": "master", "commit": "0e11ba7325efbbb3f3bebe06213afa3e7ec75131" },
-  "vim-endwise": { "branch": "master", "commit": "e714ac3bcfd5a90038de49c3254eded7c70ae3c3" }
+  "vim-endwise": { "branch": "master", "commit": "e714ac3bcfd5a90038de49c3254eded7c70ae3c3" },
+  "vim-prettier": { "branch": "master", "commit": "7dbdbb12c50a9f4ba72390cce2846248e4368fd0" }
 }

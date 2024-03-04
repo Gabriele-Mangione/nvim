@@ -1,5 +1,0 @@
-local tele = require("telescope.builtin")
-vim.keymap.set("n", "<leader>Ff", tele.find_files, {})
-vim.keymap.set("n", "<leader>Fg", tele.live_grep, {})
-vim.keymap.set("n", "<leader>Fb", tele.buffers, {})
-vim.keymap.set("n", "<leader>Fh", tele.help_tags, {})
