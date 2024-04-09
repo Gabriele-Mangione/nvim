@@ -35,6 +35,9 @@ vim.keymap.set("n","<leader>c",":BufferClose<CR>")
 --undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
+
+vim.keymap.set("n", "K", vim.lsp.buf.hover);
+
 --telescope
 --[[
 local tele = require("telescope.builtin")
